@@ -5,7 +5,7 @@ simplifiedNumer = 0
 simplifiedDenom = 0
 
 
-def isItAnInteger(x):#Omar this was all I needed to check if the divsion made was good
+def isItAnInteger(x):
     if x == int(x):
         return "Y"
     elif x != int(x):
