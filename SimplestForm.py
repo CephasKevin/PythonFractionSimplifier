@@ -4,13 +4,11 @@ simplificationMade = "true"
 simplifiedNumer = 0
 simplifiedDenom = 0
 
-
 def isItAnInteger(x):#Checks if the entered variable is a whole number
     if x == int(x):
         return "Y"
     elif x != int(x):
         return "N"
-
 
 def simplifyFraction(numer, denom):
     
@@ -73,5 +71,5 @@ else:
     print("simplified Numerator = " + str(simplifiedNumer))
     print("simplified Denomenator = " + str(simplifiedDenom))    
 
-
-print("/nPython Ended")
+print("")
+print("Python Ended")
