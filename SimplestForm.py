@@ -50,26 +50,31 @@ while simplificationMade == "true":
 
     if simplifiedNumer != 0 or simplifiedDenom != 0:
         simplifyFraction(simplifiedNumer, simplifiedDenom)
-      
+
     else:
         #ENTER NUMERATOR AND DENOMATOR HERE 
-        Numerator = -5788
-        Denomenator = -1268
+        Numerator = 10
+        Denomenator = 90
 
         if Numerator and Denomenator < 0:#A NEGATIVE DIVIDED BY A NEGATIVE IS A POSITIVE!
             simplifyFraction(Numerator * -1, Denomenator * -1)
+
+        elif Numerator == 0 or Denomenator == 0:
+            print("Fraction value 0!")
+            break
+
         else:
             simplifyFraction(Numerator, Denomenator)   
 
     if preSimplifiedNumer == simplifiedNumer or simplifiedNumer == 2 or preSimplifiedDenom == simplifiedDenom or simplifiedDenom == 2:
-        simplificationMade = "false"         
+        simplificationMade = "false"
 
+        if simplifiedNumer == 0 or simplifiedDenom == 0:
+            print("Fraction already in simplest form!")
 
-if simplifiedNumer == 0 or simplifiedDenom == 0:
-    print("Fraction already in simplest form!")
-else:
-    print("simplified Numerator = " + str(simplifiedNumer))
-    print("simplified Denomenator = " + str(simplifiedDenom))    
+        else:
+            print("simplified Numerator = " + str(simplifiedNumer))
+            print("simplified Denomenator = " + str(simplifiedDenom)) 
 
 print("")
 print("Python Ended")
